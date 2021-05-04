@@ -16,6 +16,7 @@ function App() {
     getStudents().then(setStudents);
   }, []);
 
+  // SETTING THE USER
   useEffect(() => {
     firebase.auth().onAuthStateChanged((authed) => {
       if (authed) {
