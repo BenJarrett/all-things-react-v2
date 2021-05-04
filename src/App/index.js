@@ -39,6 +39,7 @@ function App() {
       <Router>
         <NavBar user={user}/>
         <Routes
+        user={user}
           students={students}
           setStudents={setStudents}
         />
